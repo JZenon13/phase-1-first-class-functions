@@ -1,21 +1,19 @@
 function greeting(name) {
-    console.log(name);
-  }
-  
-
-
-function receivesAFunction(callback) {
-    return callback();
+  console.log(name);
 }
 
-function returnsANamedFunction()  {
-    return function greeting() {
-        console.log('hello')
-    }
-}
+let receivesAFunction = (callback) => {
+  return callback();
+};
 
-function returnsAnAnonymousFunction() {
-    return () => {
-        console.log('yoooooo')
-    }
-}
+let returnsANamedFunction = () => {
+  return function greeting() {
+    console.log("hello");
+  };
+};
+
+let returnsAnAnonymousFunction = () => {
+  return () => {
+    console.log("yoooooo");
+  };
+};
